@@ -6,18 +6,16 @@ a -> ai
 u -> ufat
 */
 
-
-
 function encriptar(){
     
     var texto = document.getElementById("encrip").value.toLowerCase();
     var imagen = document.getElementById("xs");
 
-    var textcir = texto.replace(/e/igm,"enter");
-    textcir = textcir.replace(/o/igm,"ober");
-    textcir = textcir.replace(/i/igm,"imes");
-    textcir = textcir.replace(/a/igm,"ai");
-    textcir = textcir.replace(/u/igm,"ufat");
+    var textcir = texto.replace(/e/gm,"enter");
+    textcir = textcir.replace(/o/gm,"ober");
+    textcir = textcir.replace(/i/gm,"imes");
+    textcir = textcir.replace(/a/gm,"ai");
+    textcir = textcir.replace(/u/gm,"ufat");
 
 
     document.getElementById("encrip").value = "";
@@ -32,11 +30,11 @@ function desencriptar(){
     var texto = document.getElementById("encrip").value.toLowerCase();
     var imagen = document.getElementById("xs");
 
-    var textcir = texto.replace(/enter/igm,"e");
-    textcir = textcir.replace(/ober/igm,"o");
-    textcir = textcir.replace(/imes/igm,"i");
-    textcir = textcir.replace(/ai/igm,"a");
-    textcir = textcir.replace(/ufat/igm,"u");
+    var textcir = texto.replace(/enter/gm,"e");
+    textcir = textcir.replace(/ober/gm,"o");
+    textcir = textcir.replace(/imes/gm,"i");
+    textcir = textcir.replace(/ai/gm,"a");
+    textcir = textcir.replace(/ufat/gm,"u");
 
     document.getElementById("encrip").value = "";
     imagen.setAttribute("hidden", "true");
