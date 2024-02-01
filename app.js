@@ -6,10 +6,10 @@ a -> ai
 u -> ufat
 */
 
+let imagen = document.getElementById("xs");
 function encriptar(){
     
     var texto = document.getElementById("encrip").value.toLowerCase();
-    var imagen = document.getElementById("xs");
 
     var textcir = texto.replace(/e/gm,"enter");
     textcir = textcir.replace(/o/gm,"ober");
@@ -28,7 +28,6 @@ function encriptar(){
 function desencriptar(){
 
     var texto = document.getElementById("encrip").value.toLowerCase();
-    var imagen = document.getElementById("xs");
 
     var textcir = texto.replace(/enter/gm,"e");
     textcir = textcir.replace(/ober/gm,"o");
@@ -45,7 +44,5 @@ function copy(){
     
     var cop = document.getElementById('texto2');
     navigator.clipboard.writeText(cop.innerHTML);
-    //document.getElementById("texto2").value = "";
 }
     
-
